@@ -115,3 +115,17 @@ window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resizeReset);
 window.addEventListener("mousemove", mousemove);
 window.addEventListener("mouseout", mouseout);
+window.addEventListener("DOMContentLoaded", () => {
+  const welcomeDiv = document.getElementById("welcome");
+  const message = "Welcome";
+  let index = 0;
+
+  function typeChar() {
+    if (index < message.length) {
+      welcomeDiv.textContent += message.charAt(index);
+      index++;
+      setTimeout(typeChar, 150);
+    }
+  }
+
+  typeChar();
