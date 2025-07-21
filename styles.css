@@ -1,0 +1,24 @@
+* /{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  body {
+    background-image: url('4RNk.gif');
+    /*background-size: cover;*/
+    background-position: center;
+    background-attachment: fixed;
+  }
