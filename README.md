@@ -1,2 +1,1 @@
-
-Will add details soon
+Howdy 🤠
