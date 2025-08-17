@@ -68,7 +68,7 @@ const RESUME = {
         { line: "Relevant Graduate Coursework", sub: "Database Management Systems, Advanced Computer Architecture, Machine Learning Fundamentals, Algorithm Analysis" }
     ],
     links: [
-        { label: "Download PDF Résumé", href: "./resume.pdf" },
+        { label: "Download PDF Résumé", href: "./img/resume.pdf" },
     ]
 };
 
@@ -204,4 +204,5 @@ function showResume() {
 
 
 window.addEventListener("hashchange", route);
+
 route();
