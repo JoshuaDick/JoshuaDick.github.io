@@ -9,6 +9,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { labelRenderer, titlelabel, reminderlabel, p1link } from './labels.js';
 import { loadSvgAsTexture, loadImageAsTexture, loadVideoAsTexture} from './imageprocessing.js';
+import { ocean, updateOcean } from './ocean.js';
 
 //vectors for cube positioning relative to label
 const _labelWorldPos = new THREE.Vector3();
@@ -45,6 +46,9 @@ scene.add(reminderlabel);
 reminderlabel.position.set(-1,0,0);
 scene.add(p1link);
 
+// OCEAN (added to the scene, not modelGroup, so it doesn't spin with the cube)
+scene.add(ocean);
+const clock = new THREE.Clock();
 
 function updateLabelOcclusion() {
     if (!cube) return;
@@ -132,6 +136,7 @@ function animate() {
     if (titlelabel.visible) {
         updateLabelOcclusion();
     }
+    updateOcean(clock.getElapsedTime(), camera);
     composer.render();
     labelRenderer.render(scene,camera);
 }
