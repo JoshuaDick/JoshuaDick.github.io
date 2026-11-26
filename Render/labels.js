@@ -23,7 +23,7 @@ titlediv.style.padding = '4px 8px';
 titlediv.style.borderRadius = '4px';
 titlediv.style.borderStyle = 'solid';
 titlediv.style.borderWidth = '1px';
-titlediv.style.borderColor = '#ffffff';
+titlediv.style.borderColor = '#000000';
 titlediv.style.fontFamily = 'Orbitron';
 export const titlelabel = new CSS2DObject(titlediv);
 
