@@ -1,5 +1,5 @@
 /*
-SVG texture handling
+Cube Face Texture handling
 */
 import * as THREE from 'three';
 import {renderer} from './renderhome.js';
