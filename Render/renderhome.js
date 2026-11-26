@@ -34,6 +34,7 @@ export const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.08;
 controls.target.set(0, 0, 0);
+controls.enablePan = false;
 
 const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
