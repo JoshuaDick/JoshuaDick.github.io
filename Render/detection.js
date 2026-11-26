@@ -19,11 +19,11 @@ let hoveredIndex = -1;
 let savedColor   = null;
 
 const FACE_LINKS = [
-    'https://soonerracing.com/circuit.html',  // Project 4
+    null,  // Project 4
     'https://github.com/JoshuaDick/P2PMoving',  // Project 2
     '../Resume/Dick_Joshua_Resume.pdf', // +Y
     null,                      // 3: -Y  (no link on this face)
-    'https://soonerracing.com',  // Project 1
+    null,  // Project 1
     'https://github.com/JoshuaDick/EngineData',  // Project 3
 ];
 
