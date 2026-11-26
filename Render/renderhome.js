@@ -104,7 +104,7 @@ export let modelGroup = null;
 buildCube({
     px: loadVideoAsTexture('../Videos/Project4.mp4'), //project 4
     nx: loadVideoAsTexture('../Videos/Project2.MOV'), //project 2
-    py: loadSvgAsTexture('../SVGs/resume.svg'),
+    py: loadVideoAsTexture('../Videos/Project6.mp4'),
     ny: loadVideoAsTexture('../Videos/Project5.mp4'), //project 5
     pz: loadVideoAsTexture('../Videos/Project1.mp4'), //project 1
     nz: loadVideoAsTexture('../Videos/Project3.mov'), //project 3
